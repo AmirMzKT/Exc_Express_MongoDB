@@ -1,7 +1,7 @@
 import express from "express";
 import Agendamento from "../models/agendamento.js";
 
-const agendamentoRouter = express.Router();
+const router = express.Router();
 
 // POST
 router.post("/", async (req, res) => {
@@ -126,4 +126,4 @@ router.delete("/:id", async (req, res) => {
     }
 });
 
-export default agendamentoRouter;
+export default router;
