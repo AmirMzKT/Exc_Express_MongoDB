@@ -97,7 +97,7 @@ router.patch("/:id", async (req, res) => {
         const agendamentoAtualizado = await Agendamento.findByIdAndUpdate(
             id,
             { status },
-            { new: true, runValidators = true }
+            { new: true, runValidators: true }
         );
 
         if (!agendamentoAtualizado) {
