@@ -1,11 +1,11 @@
 import express from "express";
 import conectarDB from "./database.js";
-import agendamentoRouter from "./routes/agendamento.js";
+import router from "./src/routes/agendamento.js";
+
+conectarDB();
 
 const app = express();
 const PORT = process.env.PORT || 3000;
-
-conectarDB();
 
 app.use(express.json());
 
@@ -15,7 +15,7 @@ app.get("/", (req, res) => {
 });
 
 // Rotas
-app.use("/agendamentos", agendamentoRouter);
+app.use("/agendamentos", router);
 
 // Iniciar servidor
 app.listen(PORT, () => {
