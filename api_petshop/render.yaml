@@ -1,5 +1,6 @@
-service:
+services:
   - type: web
+    runtime: node
     name: api-petshop
     plan: free
     buildCommand: "npm install"
