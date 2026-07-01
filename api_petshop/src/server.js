@@ -1,6 +1,6 @@
 import express from "express";
-import conectarDB from "./database.js";
-import router from "./src/routes/agendamento.js";
+import conectarDB from "./database.js"
+import router from "./routes/agendamento.js";
 
 conectarDB();
 
