@@ -25,3 +25,7 @@ app.use("/avaliacoes", avaliacaoRoutes);
 app.listen(PORT, () => {
     console.log(`Servidor operando com sucesso na porta ${PORT}`);
 });
+
+/*
+"test": "echo \"Error: no test specified\" && exit 1"
+*/

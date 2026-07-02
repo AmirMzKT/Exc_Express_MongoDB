@@ -1,7 +1,7 @@
 services:
   - type: web
+    name: api-imoveis
     runtime: node
-    name: api-petshop
     plan: free
     buildCommand: "npm install"
     startCommand: "npm start"
